@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/danielj32.io/holbertonschool-web_react/tree/main/0x02-react_intro/task_3/dashboard/static/css/main.a757e390.chunk.css",
+    "main.js": "/danielj32.io/holbertonschool-web_react/tree/main/0x02-react_intro/task_3/dashboard/static/js/main.fd9154bb.chunk.js",
+    "main.js.map": "/danielj32.io/holbertonschool-web_react/tree/main/0x02-react_intro/task_3/dashboard/static/js/main.fd9154bb.chunk.js.map",
+    "runtime-main.js": "/danielj32.io/holbertonschool-web_react/tree/main/0x02-react_intro/task_3/dashboard/static/js/runtime-main.b2721bd1.js",
+    "runtime-main.js.map": "/danielj32.io/holbertonschool-web_react/tree/main/0x02-react_intro/task_3/dashboard/static/js/runtime-main.b2721bd1.js.map",
+    "static/js/2.928d2f9a.chunk.js": "/danielj32.io/holbertonschool-web_react/tree/main/0x02-react_intro/task_3/dashboard/static/js/2.928d2f9a.chunk.js",
+    "static/js/2.928d2f9a.chunk.js.map": "/danielj32.io/holbertonschool-web_react/tree/main/0x02-react_intro/task_3/dashboard/static/js/2.928d2f9a.chunk.js.map",
+    "index.html": "/danielj32.io/holbertonschool-web_react/tree/main/0x02-react_intro/task_3/dashboard/index.html",
+    "static/css/main.a757e390.chunk.css.map": "/danielj32.io/holbertonschool-web_react/tree/main/0x02-react_intro/task_3/dashboard/static/css/main.a757e390.chunk.css.map",
+    "static/js/2.928d2f9a.chunk.js.LICENSE.txt": "/danielj32.io/holbertonschool-web_react/tree/main/0x02-react_intro/task_3/dashboard/static/js/2.928d2f9a.chunk.js.LICENSE.txt",
+    "static/media/logo_holberton.24bab5d6.jpg": "/danielj32.io/holbertonschool-web_react/tree/main/0x02-react_intro/task_3/dashboard/static/media/logo_holberton.24bab5d6.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b2721bd1.js",
+    "static/js/2.928d2f9a.chunk.js",
+    "static/css/main.a757e390.chunk.css",
+    "static/js/main.fd9154bb.chunk.js"
+  ]
+}
