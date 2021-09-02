@@ -1,38 +1,49 @@
-import React from 'react';
-import { shallow } from 'enzyme';
+import { shallow } from "enzyme";
+import React from "react";
+import CourseListRow from "./CourseListRow";
 
-import CourseListRow from './CourseListRow';
-
-describe('CourseListRow', () => {
-  test('renders one cell with colspan of 2 if isHeader is true and textSecondCell does not exist', () => {
-    const wrapper = shallow(
-      <CourseListRow isHeader={true} textFirstCell='test' />
-    );
-    const th = wrapper.find('th');
-
-    expect(th.length).toBe(1);
-    expect(th.props()).toHaveProperty('colSpan', '2');
+describe("<CourseListRow />", () => {
+  it("CourseListRow renders without crashing", () => {
+    const wrapper = shallow(<CourseListRow textFirstCell="test" />);
+    expect(wrapper.exists()).toEqual(true);
   });
+  it("When isHeader is true renders one cell with colspan = 2 when textSecondCell does not exist", () => {
+    const wrapper = shallow(
+      <CourseListRow isHeader={true} textFirstCell="test" />
+    );
+    wrapper.update();
+    const item = wrapper.find("th");
 
-  test('renders one tr element with two td elements if isHeader is true and textSecondCell is present', () => {
+    expect(item).toHaveLength(1);
+    expect(item.prop("colSpan")).toEqual("2");
+  });
+  it("When isHeader is true renders two cells when textSecondCell is present", () => {
     const wrapper = shallow(
       <CourseListRow
         isHeader={true}
-        textFirstCell='test'
-        textSecondCell='test'
+        textFirstCell="test"
+        textSecondCell="second"
       />
     );
-    const th = wrapper.find('th');
+    wrapper.update();
+    const item = wrapper.find("th");
 
-    expect(th.length).toBe(2);
+    expect(item).toHaveLength(2);
+    expect(item.first().text()).toEqual("test");
+    expect(item.at(1).text()).toEqual("second");
   });
-
-  test('renders two td elements if isHeader is false', () => {
+  it("When isHeader is false renders correctly two td elements within a tr element", () => {
     const wrapper = shallow(
-      <CourseListRow isHeader={false} textFirstCell='test' />
+      <CourseListRow
+        isHeader={false}
+        textFirstCell="test"
+        textSecondCell="second"
+      />
     );
-    const tds = wrapper.find('td');
+    wrapper.update();
+    const item = wrapper.find("tr");
 
-    expect(tds.length).toBe(2);
+    expect(item).toHaveLength(1);
+    expect(item.children("td")).toHaveLength(2);
   });
 });
